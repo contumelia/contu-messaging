@@ -1,0 +1,35 @@
+{
+  "name": "contumelia-messaging",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^14.14.41",
+    "dotenv": "^9.0.2",
+    "typescript": "^4.2.4"
+  },
+  "description": "",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-mockito": "^2.6.1",
+    "ts-node": "^9.1.1"
+  },
+  "scripts": {
+    "build-messaging": "tsc -p tsconfig.json",
+    "watch-messaging": "tsc -p tsconfig.json -w",
+    "test-messaging": "mocha -r ts-node/register \"tests/**/*.spec.ts\""
+  },
+  "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contumelia/contu-messaging.git"
+  },
+  "author": "aliyss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contumelia/Contumelia/issues"
+  },
+  "homepage": "https://github.com/contumelia/Contumelia#readme"
+}
