@@ -2,15 +2,14 @@
   "name": "contumelia-messaging",
   "version": "1.0.0",
   "dependencies": {
-    "@types/node": "^14.14.41",
-    "dotenv": "^9.0.2",
-    "typescript": "^4.2.4"
+    "dotenv": "^9.0.2"
   },
-  "description": "",
+  "description": "Contumelia Messaging Package for sending Data back and forth.",
   "main": "lib/index",
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.41",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "chai": "^4.3.4",
@@ -20,7 +19,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "mocha": "^8.3.2",
     "prettier": "^2.3.0",
     "prettier-eslint": "^12.0.0",
