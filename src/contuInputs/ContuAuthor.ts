@@ -1,30 +1,28 @@
-
 export interface ContuAuthorData {
-    id: string,
-    name: string,
-    bot: boolean
+	id: string;
+	name: string;
+	bot: boolean;
 }
 
 export class ContuAuthor {
-    get id(): string {
-        return this._id;
-    }
-    private readonly _id: string;
-    public name: string;
-    public bot: boolean;
+	get id(): string {
+		return this._id;
+	}
+	private readonly _id: string;
+	public name: string;
+	public bot: boolean;
 
-    constructor(props: ContuAuthorData) {
-        this._id = props.id;
-        this.name = props.name;
-        this.bot = props.bot;
-    }
+	constructor(props: ContuAuthorData) {
+		this._id = props.id;
+		this.name = props.name;
+		this.bot = props.bot;
+	}
 }
 
-export interface ContuAuthorConverterBase {
-
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface ContuAuthorConverterBase {}
 
 export interface ContuAuthorConverter {
-    new():ContuAuthorConverterBase
-    convertToAuthor(props: any): ContuAuthor
+	new (): ContuAuthorConverterBase;
+	convertToAuthor(props: any): ContuAuthor;
 }

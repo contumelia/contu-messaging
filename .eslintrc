@@ -1,0 +1,65 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"project": "./tsconfig.json",
+		"ecmaFeatures": {},
+		"extraFileExtensions": [".json"]
+	},
+	"plugins": ["@typescript-eslint", "prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"prettier/prettier"
+	],
+	"rules": {
+		"no-empty-pattern": ["off"],
+		"no-undef": ["error"],
+		"no-var": ["error"],
+		"object-curly-spacing": ["error", "always"],
+		"prettier/prettier": [
+			"error",
+			{
+				"semi": true,
+				"trailingComma": "none",
+				"singleQuote": true,
+				"useTabs": true
+			}
+		],
+		"operator-linebreak": ["error", "after"],
+		"@typescript-eslint/indent": ["error", "tab"],
+		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/await-thenable": "error",
+		"@typescript-eslint/comma-dangle": ["error"],
+		"@typescript-eslint/default-param-last": "error",
+		"@typescript-eslint/naming-convention": ["error",
+			{
+				"selector": "default",
+				"format": ["camelCase"],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "variable",
+				"format": ["camelCase"],
+				"leadingUnderscore": "allow",
+				"trailingUnderscore": "allow"
+			},
+			{
+				"selector": "typeLike",
+				"format": ["PascalCase"]
+			},
+			{
+				"selector": "enumMember",
+				"format": ["UPPER_CASE"]
+			}
+		]
+	},
+	"env": {
+		"node": true
+	},
+	"ignorePatterns": ["/*.*"]
+}

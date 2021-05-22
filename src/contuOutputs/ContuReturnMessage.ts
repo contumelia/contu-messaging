@@ -1,51 +1,58 @@
-
 export interface ContuReturnMessageCodeBlock {
-    type: string,
-    value: string
+	type: string;
+	value: string;
 }
 
 export interface ContuReturnMessageEmbed {
-    title: string,
-    description: string
-    fields: []
+	title: string;
+	description: string;
+	fields: [];
 }
 
 export enum ContuReturnMessageType {
-    Info,
-    Success,
-    Warning,
-    Error
+	INFO,
+	SUCCESS,
+	WARNING,
+	ERROR
 }
 
 export enum ContuReturnMessageChannelType {
-    Direct,
-    Channel
+	DIRECT,
+	CHANNEL
 }
 
 export interface ContuReturnMessageData {
-    type: ContuReturnMessageType
-    channel_type: ContuReturnMessageChannelType,
-    data: { content?: string; codeblock?: ContuReturnMessageCodeBlock[], embed?: ContuReturnMessageEmbed; reaction?: string }
+	type: ContuReturnMessageType;
+	channelType: ContuReturnMessageChannelType;
+	data: {
+		content?: string;
+		codeblock?: ContuReturnMessageCodeBlock[];
+		embed?: ContuReturnMessageEmbed;
+		reaction?: string;
+	};
 }
 
 export class ContuReturnMessage {
-    public type: ContuReturnMessageType;
-    public channel_type: ContuReturnMessageChannelType;
-    public data: { content?: string; codeblock?: ContuReturnMessageCodeBlock[], embed?: ContuReturnMessageEmbed; reaction?: string };
+	public type: ContuReturnMessageType;
+	public channelType: ContuReturnMessageChannelType;
+	public data: {
+		content?: string;
+		codeblock?: ContuReturnMessageCodeBlock[];
+		embed?: ContuReturnMessageEmbed;
+		reaction?: string;
+	};
 
-    constructor(props: ContuReturnMessageData) {
-        this.type = props.type;
-        this.channel_type = props.channel_type;
-        this.data = props.data;
-    }
-
+	constructor(props: ContuReturnMessageData) {
+		this.type = props.type;
+		this.channelType = props.channelType;
+		this.data = props.data;
+	}
 }
 
-export interface ContuReturnMessageConverterBase {
-
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface ContuReturnMessageConverterBase {}
 
 export interface ContuReturnMessageConverter {
-    new():ContuReturnMessageConverterBase
-    convertToOutputMessage(props: ContuReturnMessage): any
+	new (): ContuReturnMessageConverterBase;
+	convertToOutputMessage(props: ContuReturnMessage): any;
 }
