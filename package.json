@@ -5,7 +5,8 @@
     "dotenv": "^9.0.2"
   },
   "description": "Contumelia Messaging Package for sending Data back and forth.",
-  "main": "lib/index",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/mocha": "^8.2.2",
@@ -38,7 +39,6 @@
   "files": [
     "lib"
   ],
-  "typings": "lib/index",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contumelia/contu-messaging.git"
