@@ -36,7 +36,8 @@
 		"@typescript-eslint/await-thenable": "error",
 		"@typescript-eslint/comma-dangle": ["error"],
 		"@typescript-eslint/default-param-last": "error",
-		"@typescript-eslint/naming-convention": ["error",
+		"@typescript-eslint/naming-convention": [
+			"error",
 			{
 				"selector": "default",
 				"format": ["camelCase"],

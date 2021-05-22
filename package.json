@@ -33,7 +33,7 @@
     "build-messaging": "tsc -p tsconfig.json",
     "watch-messaging": "tsc -p tsconfig.json -w",
     "test-messaging": "mocha -r ts-node/register \"tests/**/*.spec.ts\"",
-    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix && prettier --write ."
+    "lint-messaging": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix && prettier --write ."
   },
   "typings": "./dist/index.d.ts",
   "repository": {
