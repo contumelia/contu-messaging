@@ -5,6 +5,6 @@ package-lock.json
 package.json
 
 # TypeScript
-/dist
+/lib
 /tsconfig.json
 /tsconfig.eslint.json
