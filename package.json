@@ -1,5 +1,5 @@
 {
-  "name": "contumelia-messaging",
+  "name": "@contu/contumelia-messaging",
   "version": "1.0.0",
   "dependencies": {
     "dotenv": "^9.0.2"
@@ -30,11 +30,11 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "build": "tsc -p .",
     "build-messaging": "tsc -p tsconfig.json",
     "watch-messaging": "tsc -p tsconfig.json -w",
     "test-messaging": "mocha -r ts-node/register \"tests/**/*.spec.ts\"",
-    "lint-messaging": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix && prettier --write ."
+    "lint-messaging": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix && prettier --write .",
+    "prepublish": "npm run build-messaging"
   },
   "files": [
     "lib"
