@@ -1,19 +1,19 @@
-import {
+export {
 	ContuChannel,
 	ContuChannelConverter,
 	ContuChannelData
 } from './contuInputs/ContuChannel';
-import {
+export {
 	ContuMessage,
 	ContuMessageConverter,
 	ContuMessageData
 } from './contuInputs/ContuMessage';
-import {
+export {
 	ContuAuthor,
 	ContuAuthorConverter,
 	ContuAuthorData
 } from './contuInputs/ContuAuthor';
-import {
+export {
 	ContuReturnMessage,
 	ContuReturnMessageChannelType,
 	ContuReturnMessageCodeBlock,
@@ -22,22 +22,3 @@ import {
 	ContuReturnMessageEmbed,
 	ContuReturnMessageType
 } from './contuOutputs/ContuReturnMessage';
-
-export {
-	ContuChannel,
-	ContuChannelData,
-	ContuChannelConverter,
-	ContuMessage,
-	ContuMessageData,
-	ContuMessageConverter,
-	ContuAuthor,
-	ContuAuthorData,
-	ContuAuthorConverter,
-	ContuReturnMessage,
-	ContuReturnMessageData,
-	ContuReturnMessageConverter,
-	ContuReturnMessageChannelType,
-	ContuReturnMessageType,
-	ContuReturnMessageEmbed,
-	ContuReturnMessageCodeBlock
-};
