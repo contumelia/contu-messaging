@@ -7,7 +7,7 @@
     "typescript": "^4.2.4"
   },
   "description": "",
-  "main": "lib",
+  "main": "lib/index",
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/mocha": "^8.2.2",
@@ -30,7 +30,7 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p .",
     "build-messaging": "tsc -p tsconfig.json",
     "watch-messaging": "tsc -p tsconfig.json -w",
     "test-messaging": "mocha -r ts-node/register \"tests/**/*.spec.ts\"",
@@ -39,7 +39,7 @@
   "files": [
     "lib"
   ],
-  "typings": "lib/index.d.ts",
+  "typings": "lib/index",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contumelia/contu-messaging.git"
