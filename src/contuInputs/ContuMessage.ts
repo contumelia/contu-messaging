@@ -12,6 +12,7 @@ export class ContuMessage {
 	get id(): string {
 		return this._id;
 	}
+
 	private readonly _id: string;
 	public channel: ContuChannel;
 	public author: ContuAuthor;
